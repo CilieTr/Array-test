@@ -10,3 +10,10 @@ function addProduct() {
     products.push(productInput.value);
     showProduct();
 }
+
+function showProduct() {
+    productList.innerHTML ="";
+    productInput.value = "";
+}
+
+showProduct();
