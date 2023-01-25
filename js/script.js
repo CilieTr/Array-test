@@ -19,12 +19,12 @@ function removeProduct(i) {
 function showProduct() {
   productList.innerHTML = "";
   productInput.value = "";
-}
-
-for (let i = 0; i < products.length; i++) {
-  productList.innerHTML += `<li onclick ="removeProduct(${[i]})">${
-    products[i]
-  } </li>`;
+  
+  for (let i = 0; i < products.length; i++) {
+    productList.innerHTML += `<li onclick ="removeProduct(${[i]})">${
+      products[i]
+    } </li>`;
+  }
 }
 
 showProduct();
